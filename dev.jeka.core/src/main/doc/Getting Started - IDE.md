@@ -1,32 +1,31 @@
-# Install Intellij Plugin
+# How to use _'Jeka'_ to create simple automation projects
 
-Install direcly plugin from [here](https://plugins.jetbrains.com/plugin/13489-jeka) 
-or search 'jeka' in Intellij Marketplace
+The below example will show simple functions that can executed both in IDE and command line.
 
-# Create simple automation projects
+### Install Intellij Plugin
 
-In this example, we will create a project to automate tasks (no Java project to build).
+Install plugin directly from [here](https://plugins.jetbrains.com/plugin/13489-jeka)
+or search _'jeka'_ in Intellij Marketplace.
 
-We will code simple functions that can executed both in IDE and in command line.
+### Hello World !
 
-## Hello World !
-
-Right click on folder or module > Jeka > Generate Jeka files and folders...
+Right-click on a folder or module >> "Jeka" >> "Generate Jeka files and folders..."
 
 ![plot](images/generate-jeka-files.png)
-<br/><br/><br/>
-This opens a dialog box. Press OK.
+<br/><br/>
+Dialog box will be open with default selection and click "OK". 
+
 
 ![plot](images/create-jeka-files.png)
 
-<br/><br/><br/><br/>
-This generates a Jeka folder structure with an empty Jeka class.
 
-On the right side of your IDE, you can expand nodes to navigate on Jeka commands that you can perform. These commands come from either the JkClass or from plugin present in classpath.
+The _Jeka_ folder structure will be generated with an empty _Jeka_ class.
 
-Click *Commands > help* to trigger the `help` method coming from `JkClass`. 
-This will display a contextual help for available commands and options.
-You can also invoke the `help` command using command line `./jekaw help`
+On the right side of the IDE, nodes can be expanded to navigate on Jeka commands. These commands either come from the `JkClass` or plugin in classpath.
+
+Click *"Commands" >> "Help"* to trigger the `help` method coming from `JkClass`.
+This will display a contextual help from a list of all available commands and options.
+The `help` command can be also invoked by using command line `./jekaw help`
 
 You can now add your own commands just by declaring a public no-arg method returning `void`.
 
